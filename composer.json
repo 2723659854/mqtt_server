@@ -1,0 +1,5 @@
+{
+    "require": {
+        "workerman/mqtt": "^1.6"
+    }
+}

@@ -1,0 +1,136 @@
+2024-07-01 07:04:06 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught Exception: class \Protocols\Mqtt not exist in D:\project\omg\vendor\workerman\workerman\Worker.php:2429
+Stack trace:
+#0 D:\project\omg\vendor\workerman\workerman\Worker.php(2351): Workerman\Worker->parseSocketAddress()
+#1 D:\project\omg\vendor\workerman\workerman\Worker.php(1486): Workerman\Worker->listen()
+#2 D:\project\omg\vendor\workerman\workerman\Worker.php(1405): Workerman\Worker::forkWorkersForWindows()
+#3 D:\project\omg\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#4 D:\project\omg\server.php(19): Workerman\Worker::runAll()
+#5 {main}
+  thrown in D:\project\omg\vendor\workerman\workerman\Worker.php on line 2429"
+2024-07-01 07:04:56 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught Exception: class \Protocols\Mqtt not exist in D:\project\omg\vendor\workerman\workerman\Worker.php:2429
+Stack trace:
+#0 D:\project\omg\vendor\workerman\workerman\Worker.php(2351): Workerman\Worker->parseSocketAddress()
+#1 D:\project\omg\vendor\workerman\workerman\Worker.php(1486): Workerman\Worker->listen()
+#2 D:\project\omg\vendor\workerman\workerman\Worker.php(1405): Workerman\Worker::forkWorkersForWindows()
+#3 D:\project\omg\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#4 D:\project\omg\server.php(19): Workerman\Worker::runAll()
+#5 {main}
+  thrown in D:\project\omg\vendor\workerman\workerman\Worker.php on line 2429"
+2024-07-01 07:06:23 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught Exception: class \Protocols\Mqtt not exist in D:\project\omg\vendor\workerman\workerman\Worker.php:2429
+Stack trace:
+#0 D:\project\omg\vendor\workerman\workerman\Worker.php(2351): Workerman\Worker->parseSocketAddress()
+#1 D:\project\omg\vendor\workerman\workerman\Worker.php(1486): Workerman\Worker->listen()
+#2 D:\project\omg\vendor\workerman\workerman\Worker.php(1405): Workerman\Worker::forkWorkersForWindows()
+#3 D:\project\omg\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#4 D:\project\omg\server.php(19): Workerman\Worker::runAll()
+#5 {main}
+  thrown in D:\project\omg\vendor\workerman\workerman\Worker.php on line 2429"
+2024-07-01 07:06:49 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught Exception: class \Protocols\Mqtt not exist in D:\project\omg\vendor\workerman\workerman\Worker.php:2429
+Stack trace:
+#0 D:\project\omg\vendor\workerman\workerman\Worker.php(2351): Workerman\Worker->parseSocketAddress()
+#1 D:\project\omg\vendor\workerman\workerman\Worker.php(1486): Workerman\Worker->listen()
+#2 D:\project\omg\vendor\workerman\workerman\Worker.php(1405): Workerman\Worker::forkWorkersForWindows()
+#3 D:\project\omg\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#4 D:\project\omg\server.php(19): Workerman\Worker::runAll()
+#5 {main}
+  thrown in D:\project\omg\vendor\workerman\workerman\Worker.php on line 2429"
+2024-07-01 07:11:22 pid:1 ArgumentCountError: Too few arguments to function {closure}(), 1 passed in D:\project\omg\vendor\workerman\workerman\Worker.php on line 2579 and exactly 2 expected in D:\project\omg\server.php:19
+Stack trace:
+#0 D:\project\omg\vendor\workerman\workerman\Worker.php(2579): {closure}(Object(Workerman\Connection\TcpConnection))
+#1 D:\project\omg\vendor\workerman\workerman\Events\Select.php(311): Workerman\Worker->acceptConnection(Resource id #18)
+#2 D:\project\omg\vendor\workerman\workerman\Worker.php(1488): Workerman\Events\Select->loop()
+#3 D:\project\omg\vendor\workerman\workerman\Worker.php(1405): Workerman\Worker::forkWorkersForWindows()
+#4 D:\project\omg\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#5 D:\project\omg\server.php(24): Workerman\Worker::runAll()
+#6 {main}
+2024-07-01 07:12:54 pid:1 TypeError: unpack(): Argument #3 ($offset) must be of type int, string given in D:\project\omg\Protocols\Mqtt.php:253
+Stack trace:
+#0 D:\project\omg\Protocols\Mqtt.php(253): unpack('n', '\x002\x00\x1Fworkerman-m...', '\x002\x00\x1Fworkerman-m...')
+#1 D:\project\omg\vendor\workerman\workerman\Connection\TcpConnection.php(646): Protocols\Mqtt::decode('\x10+\x00\x04MQTT\x04\x02\x002\x00\x1Fw...', Object(Workerman\Connection\TcpConnection))
+#2 D:\project\omg\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #19)
+#3 D:\project\omg\vendor\workerman\workerman\Worker.php(1488): Workerman\Events\Select->loop()
+#4 D:\project\omg\vendor\workerman\workerman\Worker.php(1405): Workerman\Worker::forkWorkersForWindows()
+#5 D:\project\omg\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#6 D:\project\omg\server.php(24): Workerman\Worker::runAll()
+#7 {main}
+2024-07-01 07:16:11 pid:1 TypeError: unpack(): Argument #3 ($offset) must be of type int, string given in D:\project\omg\Protocols\Mqtt.php:253
+Stack trace:
+#0 D:\project\omg\Protocols\Mqtt.php(253): unpack('n', '\x002\x00\x1Fworkerman-m...', '\x002\x00\x1Fworkerman-m...')
+#1 D:\project\omg\vendor\workerman\workerman\Connection\TcpConnection.php(646): Protocols\Mqtt::decode('\x10+\x00\x04MQTT\x04\x02\x002\x00\x1Fw...', Object(Workerman\Connection\TcpConnection))
+#2 D:\project\omg\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #19)
+#3 D:\project\omg\vendor\workerman\workerman\Worker.php(1488): Workerman\Events\Select->loop()
+#4 D:\project\omg\vendor\workerman\workerman\Worker.php(1405): Workerman\Worker::forkWorkersForWindows()
+#5 D:\project\omg\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#6 D:\project\omg\server.php(39): Workerman\Worker::runAll()
+#7 {main}
+2024-07-01 07:17:01 pid:1 TypeError: unpack(): Argument #3 ($offset) must be of type int, string given in D:\project\omg\Protocols\Mqtt.php:253
+Stack trace:
+#0 D:\project\omg\Protocols\Mqtt.php(253): unpack('n', '\x002\x00\x1Fworkerman-m...', '\x002\x00\x1Fworkerman-m...')
+#1 D:\project\omg\vendor\workerman\workerman\Connection\TcpConnection.php(646): Protocols\Mqtt::decode('\x10+\x00\x04MQTT\x04\x02\x002\x00\x1Fw...', Object(Workerman\Connection\TcpConnection))
+#2 D:\project\omg\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #19)
+#3 D:\project\omg\vendor\workerman\workerman\Worker.php(1488): Workerman\Events\Select->loop()
+#4 D:\project\omg\vendor\workerman\workerman\Worker.php(1405): Workerman\Worker::forkWorkersForWindows()
+#5 D:\project\omg\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#6 D:\project\omg\server.php(27): Workerman\Worker::runAll()
+#7 {main}
+2024-07-01 07:17:09 pid:1 TypeError: unpack(): Argument #3 ($offset) must be of type int, string given in D:\project\omg\Protocols\Mqtt.php:253
+Stack trace:
+#0 D:\project\omg\Protocols\Mqtt.php(253): unpack('n', '\x002\x00 workerman-m...', '\x002\x00 workerman-m...')
+#1 D:\project\omg\vendor\workerman\workerman\Connection\TcpConnection.php(646): Protocols\Mqtt::decode('\x10,\x00\x04MQTT\x04\x02\x002\x00 w...', Object(Workerman\Connection\TcpConnection))
+#2 D:\project\omg\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #19)
+#3 D:\project\omg\vendor\workerman\workerman\Worker.php(1488): Workerman\Events\Select->loop()
+#4 D:\project\omg\vendor\workerman\workerman\Worker.php(1405): Workerman\Worker::forkWorkersForWindows()
+#5 D:\project\omg\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#6 D:\project\omg\server.php(27): Workerman\Worker::runAll()
+#7 {main}
+2024-07-01 07:18:06 pid:1 TypeError: unpack(): Argument #3 ($offset) must be of type int, string given in D:\project\omg\Protocols\Mqtt.php:253
+Stack trace:
+#0 D:\project\omg\Protocols\Mqtt.php(253): unpack('n', '\x002\x00 workerman-m...', '\x002\x00 workerman-m...')
+#1 D:\project\omg\vendor\workerman\workerman\Connection\TcpConnection.php(646): Protocols\Mqtt::decode('\x10,\x00\x04MQTT\x04\x02\x002\x00 w...', Object(Workerman\Connection\TcpConnection))
+#2 D:\project\omg\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #19)
+#3 D:\project\omg\vendor\workerman\workerman\Worker.php(1488): Workerman\Events\Select->loop()
+#4 D:\project\omg\vendor\workerman\workerman\Worker.php(1405): Workerman\Worker::forkWorkersForWindows()
+#5 D:\project\omg\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#6 D:\project\omg\server.php(27): Workerman\Worker::runAll()
+#7 {main}
+2024-07-01 07:24:43 pid:1 TypeError: unpack(): Argument #3 ($offset) must be of type int, string given in D:\project\omg\Protocols\Mqtt.php:253
+Stack trace:
+#0 D:\project\omg\Protocols\Mqtt.php(253): unpack('n', '\x002\x00 workerman-m...', '\x002\x00 workerman-m...')
+#1 D:\project\omg\vendor\workerman\workerman\Connection\TcpConnection.php(646): Protocols\Mqtt::decode('\x10,\x00\x04MQTT\x04\x02\x002\x00 w...', Object(Workerman\Connection\TcpConnection))
+#2 D:\project\omg\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #19)
+#3 D:\project\omg\vendor\workerman\workerman\Worker.php(1488): Workerman\Events\Select->loop()
+#4 D:\project\omg\vendor\workerman\workerman\Worker.php(1405): Workerman\Worker::forkWorkersForWindows()
+#5 D:\project\omg\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#6 D:\project\omg\server.php(43): Workerman\Worker::runAll()
+#7 {main}
+2024-07-01 07:25:06 pid:1 TypeError: unpack(): Argument #3 ($offset) must be of type int, string given in D:\project\omg\Protocols\Mqtt.php:254
+Stack trace:
+#0 D:\project\omg\Protocols\Mqtt.php(254): unpack('n', '\x002\x00 workerman-m...', '\x002\x00 workerman-m...')
+#1 D:\project\omg\vendor\workerman\workerman\Connection\TcpConnection.php(646): Protocols\Mqtt::decode('\x10,\x00\x04MQTT\x04\x02\x002\x00 w...', Object(Workerman\Connection\TcpConnection))
+#2 D:\project\omg\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #19)
+#3 D:\project\omg\vendor\workerman\workerman\Worker.php(1488): Workerman\Events\Select->loop()
+#4 D:\project\omg\vendor\workerman\workerman\Worker.php(1405): Workerman\Worker::forkWorkersForWindows()
+#5 D:\project\omg\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#6 D:\project\omg\server.php(43): Workerman\Worker::runAll()
+#7 {main}
+2024-07-01 07:38:22 pid:1 TypeError: array_merge(): Argument #2 must be of type array, null given in D:\project\omg\Protocols\Mqtt.php:205
+Stack trace:
+#0 D:\project\omg\Protocols\Mqtt.php(205): array_merge(Array, NULL)
+#1 D:\project\omg\vendor\workerman\workerman\Connection\TcpConnection.php(329): Protocols\Mqtt::encode(Array, Object(Workerman\Connection\TcpConnection))
+#2 D:\project\omg\server.php(29): Workerman\Connection\TcpConnection->send(Array)
+#3 D:\project\omg\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#4 D:\project\omg\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #19)
+#5 D:\project\omg\vendor\workerman\workerman\Worker.php(1488): Workerman\Events\Select->loop()
+#6 D:\project\omg\vendor\workerman\workerman\Worker.php(1405): Workerman\Worker::forkWorkersForWindows()
+#7 D:\project\omg\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#8 D:\project\omg\server.php(39): Workerman\Worker::runAll()
+#9 {main}
+2024-07-01 07:48:24 pid:1 ArgumentCountError: Too few arguments to function {closure}(), 0 passed in D:\project\omg\vendor\workerman\workerman\Events\Select.php on line 238 and exactly 1 expected in D:\project\omg\server.php:30
+Stack trace:
+#0 D:\project\omg\vendor\workerman\workerman\Events\Select.php(238): {closure}()
+#1 D:\project\omg\vendor\workerman\workerman\Events\Select.php(299): Workerman\Events\Select->tick()
+#2 D:\project\omg\vendor\workerman\workerman\Worker.php(1488): Workerman\Events\Select->loop()
+#3 D:\project\omg\vendor\workerman\workerman\Worker.php(1405): Workerman\Worker::forkWorkersForWindows()
+#4 D:\project\omg\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#5 D:\project\omg\server.php(46): Workerman\Worker::runAll()
+#6 {main}
