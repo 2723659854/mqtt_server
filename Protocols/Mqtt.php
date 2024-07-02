@@ -15,79 +15,99 @@ namespace Protocols;
 
 /**
  * Mqtt Protocol.
- * 
+ * mqtt 物联网协议
  * @author    walkor<walkor@workerman.net>
+ * @note
+ * QoS（服務質量）級別：MQTT支持三個服務質量（QoS）級別，提供不同程度的消息傳遞保證：
+ *
+ * QoS 0: 最多一次（at most once），消息最多傳送一次，不會重傳。
+ * QoS 1: 至少一次（at least once），消息至少傳送一次，可能會重傳。
+ * QoS 2: 只有一次（exactly once），消息僅傳送一次，確保不重複。
  */
 class Mqtt
 {
 
     /**
      * CONNECT Packet.
+     * 用於客戶端向服務器發送連接請求。此命令包含客戶端標識、認證信息和其他可選參數。
      */
     const CMD_CONNECT = 1;
 
     /**
      * CONNACK
+     * 服務器對CONNECT請求的確認包。它包含連接狀態（成功或失敗）和其他相關信息。
      */
     const CMD_CONNACK = 2;
 
     /**
      * PUBLISH
+     * 用於發布消息到服務器。消息包含主題（topic）和消息內容，服務器會根據主題將消息分發給訂閱者。
      */
     const CMD_PUBLISH = 3;
 
     /**
      * PUBACK
+     * 用於確認已經成功接收PUBLISH包。在QoS 1級別下使用。
      */
     const CMD_PUBACK = 4;
 
     /**
      * PUBREC
+     * 用於確認已經成功接收PUBLISH包的第一步。在QoS 2級別下使用。
      */
     const CMD_PUBREC = 5;
 
     /**
      * PUBREL
+     * 用於確認PUBREC包。在QoS 2級別下使用。
      */
     const CMD_PUBREL = 6;
 
     /**
      * PUBCOMP
+     * 用於確認PUBREL包，完成QoS 2消息流。
      */
     const CMD_PUBCOMP = 7;
 
     /**
      * SUBSCRIBE
+     * 用於客戶端訂閱一個或多個主題，以接收來自這些主題的消息。
      */
     const CMD_SUBSCRIBE = 8;
 
     /**
      * SUBACK
+     * 服務器對SUBSCRIBE請求的確認包，告知客戶端訂閱請求是否成功。
      */
     const CMD_SUBACK = 9;
 
     /**
      * UNSUBSCRIBE
+     * 用於客戶端取消訂閱一個或多個主題。
      */
     const CMD_UNSUBSCRIBE = 10;
 
     /**
      * UNSUBACK
+     * 服務器對UNSUBSCRIBE請求的確認包，告知客戶端取消訂閱請求是否成功。
      */
     const CMD_UNSUBACK = 11;
 
     /**
      * PINGREQ
+     * 用於客戶端向服務器發送心跳包，確保連接是活動的。
      */
     const CMD_PINGREQ = 12;
 
     /**
      * PINGRESP
+     * 服務器對PINGREQ心跳包的響應，表示連接是活動的。
      */
     const CMD_PINGRESP = 13;
 
     /**
      * DISCONNECT
+     * 用於客戶端通知服務器斷開連接。
      */
     const CMD_DISCONNECT = 14;
 

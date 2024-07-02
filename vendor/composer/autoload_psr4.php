@@ -8,4 +8,5 @@ $baseDir = dirname($vendorDir);
 return array(
     'Workerman\\Mqtt\\' => array($vendorDir . '/workerman/mqtt/src'),
     'Workerman\\' => array($vendorDir . '/workerman/workerman'),
+    '17189\\Omg\\' => array($baseDir . '/src'),
 );

@@ -1,5 +1,22 @@
 {
+    "name": "xiaosongshu/mqtt_server",
+    "description": "php 版本物联网服务器",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "17189\\Omg\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "yanglong",
+            "email": "2723659854@qq.com"
+        }
+    ],
+    "minimum-stability": "stable",
     "require": {
+        "php": ">=7.1",
         "workerman/mqtt": "^1.6"
     }
 }
